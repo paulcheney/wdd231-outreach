@@ -88,7 +88,7 @@ li {
 }
 
 
-.problem, .risk, .good {
+.problem, .risk, .good, .announce {
   padding: .5rem 1rem;
   margin: 1rem 8px;
   border-radius: 4px;
@@ -106,7 +106,11 @@ li {
   background-color: #c8ecd4;
   border-color: #68d18b;
 }
-.problem section, .risk section, .good section {
+.announce {
+  background-color: #c8e0ec;
+  border-color: #68b2d1;
+}
+.problem section, .risk section, .good section, .announce section {
   font-style: italic; 
   background-color: rgba(255,255,255,0.2);
   padding: .5rem .3rem;
