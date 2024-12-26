@@ -1,0 +1,196 @@
+/* Prevent adjustments of font size after orientation changes.  */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  height: 100%;
+}
+
+/*---- apply a natural box layout model to all elements -------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $defaultFont;
+  color: $fontColor;
+}
+
+a {color: $secondaryColor;}
+
+header {
+  display: grid;
+  grid-template-columns: 32px auto;
+  column-gap: 10px;
+  margin: 1rem $gutter;
+
+  img {
+    padding-top: 7px
+  }
+
+  span {
+    font-weight: $lightWeight;
+    font-size: 2rem;
+    
+  }
+}
+
+nav {
+  margin: 1rem $gutter;
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+  a {
+    display: block;
+    text-align: center;
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: $primaryColor;
+    color: white;
+    text-decoration: none;
+    font-weight: $boldWeight;
+    box-shadow: 3px 3px 5px #888;
+  }
+
+  a:hover {
+    box-shadow: 3px 3px 5px #555;
+    background-color: $secondaryColor;
+  }
+}
+
+main h2 {
+  margin:.5rem 0 0 $gutter;
+  color:$secondaryColor;
+  font-size: 1.2rem;
+}
+main > p {line-height: 140%; margin: 0 $gutter;}
+main img {
+  max-width: 99%;
+  display: block;
+  box-shadow: 0 0 10px #aaa;
+}
+
+dl {
+  margin: .5rem 0 0 $gutter;
+  dt {font-weight: $boldWeight; padding-top:.75rem; color:#666; }
+  dd {color: $primaryColor; margin-left: .3rem;}
+}
+
+details {
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 1rem $gutter;
+  border: 1px solid #aaa;
+  background-color: #f4f4f4;
+  > p {padding: 0 $gutter; }
+}
+
+summary {
+  font-size: 1.5rem;
+  font-weight: $boldWeight;
+  background: linear-gradient(90deg, $secondaryColor, $primaryColor);
+  color: white;
+  padding: .5rem 1rem;
+
+  &::marker {
+    color: rgba(255, 255, 255, 0.75)
+  }
+  time {
+    font-weight: $lightWeight;
+    font-size: .9rem;
+  }
+} // end summary
+
+.icons img {
+  display: inline;
+}
+
+@mixin outreachsection {
+  display: grid;
+  grid-template-columns: auto 28px;
+  padding: 0 $gutter .5rem $gutter;
+
+  grid-template-areas:
+    "title checked"
+    "message message";
+  margin: 1rem .5rem;
+  border-radius: 8px;
+  border-top: 6px solid rgba(0, 0, 0, 0.2);
+
+  > p {
+    grid-area: title;
+    padding-right: 4px;
+    font-size: 1.15rem;
+  }
+
+  p {line-height: 125%;}
+
+  time {
+    color: $secondaryColor;
+    font-weight: $boldWeight;
+    font-size: .9rem;
+  
+  }
+  button {
+    grid-area: checked;
+    margin-top: 1rem;
+    width: 28px;
+    height: 28px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid #444;
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px #555;
+  }
+
+  div {
+    grid-area: message;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0 $gutter;
+    font-style: italic;
+    color: #333;
+  }
+}
+
+.teams {
+  @include outreachsection;
+  background-color: $teamsColor;
+}
+
+.canvas {
+  @include outreachsection;
+  background-color: $canvasColor;
+}
+
+.task {
+  @include outreachsection;
+  background-color: $taskColor;
+}
+
+.report {
+  @include outreachsection;
+  background-color: $reportColor;
+  a{color:$primaryColor;}
+  a:hover {color:$secondaryColor;}
+}
+
+button:hover {
+  box-shadow: 0px 0px 5px #333;
+  cursor: pointer;
+}
+
+button.checked {
+  background-color: #0d0;
+
+  &:before {
+    content: "\2714"
+  }
+
+  color: white;
+}
+footer {
+  padding: .5rem 0;
+  p {text-align: center; }
+}

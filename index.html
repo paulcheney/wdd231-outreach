@@ -4,651 +4,810 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web Lab Start File">
+  <meta name="author" content="Paul Cheney">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;1,300;1,700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.min.css">
+
+  <title>Web Lab Start File</title>
 
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="manifest" href="/site.webmanifest">
 
-
-  <title>WDD231 Outreach</title>
 </head>
 
 <body>
-  <div class="show-content user_content clearfix enhanced">
-    <header><img src="favicon-32x32.png"><h1>WDD231 Student Outreach</h1></header>
-
-    <div class="outreachdue">
-      <p>Block begins on <span id="classStart"></span></p>
-    </div>
-
-
-    <div id="WeekLinks">
-      <a href="#week01start">01</a>
-      <a href="#week02start">02</a>
-      <a href="#week03start">03</a>
-      <a href="#week04start">04</a>
-      <a href="#week05start">05</a>
-      <a href="#week06start">06</a>
-      <a href="#week07start">07</a>
-    </div>
-
-    <p>Student outreach includes any work you do to build relationships with students, help clarify course content and
-      assignment expectations, and encourage students to persist and do their best in the class. Though some additional
-      instruction may be given by week or course, student outreach assignments generally fall into the following
-      categories:</p>
-    <ul>
-      <li><strong>Non-participating and Failing Students</strong> - In the initial weeks of a course, and at key times
-        surrounding academic deadlines, you should reach out to students who are in danger of failing the course due to
-        either low participation or failing grades. Message templates are provided in relevant weeks to assist you in
-        reaching out to this student group.</li>
-      <li><strong>Missing Assignments</strong> - Starting in Week 02, you should reach out to any students in your class
-        who are missing high-stakes assessments. Specific assessments will be identified in your course-specific
-        outreach tasks.</li>
-      <li><strong>At-Risk Students</strong> - Some students may not be missing a high-stakes assessment, but they could
-        use additional instructor help because they have received a lower grade on the assessment. Starting in Week 02,
-        you will be asked to reach out to students who have scored low on a high-stakes assessment with an eye toward
-        tutoring the student on specific concepts that could help them succeed. You may also allow students in this
-        group to resubmit their assignment.</li>
-      <li><strong>Positive Outreach</strong> - Part of good student outreach is not just focusing on students who may
-        need additional help, but building relationships and presence with those who are already succeeding. Besides
-        reaching out to students who are missing or scoring low on key assessments, you will also be prompted to reach
-        out to students who have scored highly, recognizing their good work.</li>
-      <li><strong>Additional Feedback on Course Content</strong> - Depending on the course, you may be asked to review
-        certain assignments in order to give individual students or student groups additional feedback on key concepts
-        so they can succeed in future assignments.</li>
-      <li><strong>Inspired Outreach</strong> - As an instructor in your course, pray for your students. You may receive
-        additional inspiration and guidance on other ways you can positively influence and encourage the students in
-        your class.</li>
-    </ul>
-
-    <p class="pop"><strong>Communication Channels:</strong> When communicating with students one-on-one, use <strong>MS Teams</strong>. <br>When sending group outreach messages for assignment progress, use <strong>Canvas Gradebook</strong>.</p>
-
-
-
-
-
-    <!-- *********************** START A NEW WEEK HERE *********************** -->
-    <h2>Before Class Begins - <span id="sendWelcomeEmail"></span></h2>
-    <h3>Send an Email</h3>
-    
-    <div class="good">
-      <p>Modify the following message and then email it to all students using Canvas Inbox.</p>
-      <section>
-      <p>SUBJECT: Welcome to WDD231, the best class ever!</p>
-
-      <p>What a fantastic opportunity to work with students from around the world who share a common faith.</p>
-      <p>Class begins on <span id="classStart2"></span>, and we must hit the ground running.</p>
-      <p>Canvas should be open now if you want to get started early. No Pressure here.😃</p>
-      <p>You need to dedicate many hours per week to master these concepts. If you don't have that kind of time, you may
-        want to take the class later when you can devote enough time to be successful.</p>
-      <p>You will be using VS Code to create all your assignments and then hosting them on GitHub. Both are tools used
-        by professionals in the field. </p>
-      <p>We will be using MS Teams for communication and teamwork, so ensure you have it installed and ready to go.</p>
-      <p>It's going to be a fantastic and fast-paced ride for the next few weeks, so take your vitamin pills, and let's
-        get started.
-      <p>If you find yourself overwhelmed within the first week, you can drop the class using these instructions.</p>
-      <p>https://byui-help.screenstepslive.com/a/884683-how-to-withdraw-from-class</p>
-      <p>Bro/Sister Smith</p>
-    </section>
-    </div>
-
-    <div class="announce">
-      <p>Post your version of the following message to Canvas Announcements</p>
-      <section>
-      <p>SUBJECT: Welcome to Class</p>
-        <p>Thanks for joining us for another block class to learn about web front-end development.</p>
-      <p>We will use MS Teams for announcements, group communication, and direct questions between students and teachers. I will check messages every day.</p>
-        <p>I will NOT be posting any further announcements in Canvas. 😄</p>
-      <p>Bro/Sister Smith</p>
-    </section>
-    </div>
-
-    <h3>Connect Teams and Canvas</h3>
-    <p>Open Canvas, select settings, click the "Intergrations" tab and activate Microsoft Sync. Click the "Sync Now" button. W A I T. </p>
-      <img src="images/teams-integrations.webp">
-
-    <h3>Sort the Canvas Gradebook</h3>
-    <p>While your waiting, sort the Canvas gradebok, it makes finding the current assignent much easier. Open your course in Canvas and choose the "Grades". Select the gear in the upper right corner.</p>
-    <img src="images/sort-gradebook.webp">
-
-    <h3>Activate your class in MS Teams</h3>
-    <p>Once the sync process has finished, you will have a new Teams for your new class. You need to activate the class and let the students in.</p>
-    <img src="images/teams-activate.webp">
-    <img src="images/teams-activate2.webp">
-
-    <h3>Post a message in Teams</h3>
-    <p>Post a message NOT to use the "General Channel". When we get over 100 people talking over 6 weeks, this becomes a mess.🤪</p>
-    <img src="images/teams-message.webp">
-
-    <h3>Change the Teams Inforamtion</h3>
-    <ul>
-      <li>Select the Teams icon on the left panel.</li>
-      <li>Click the new WDD231 team in your list.</li>
-      <li>To the right of the team name, select the &mldr; and choose "Manage team" from the drop down menu</li>
-      <li>Click the Settings tab. Then expand "Team details" section.</li>
-      <li>Update the team name to include WDD231 and Block 1 or Block 2 (as appropiate)</li>
-      <li>Click the "Change picture" link and select "Upload" to choose a new image from your files.</li>
-      <li>Remember to save. </li>
-      <li>NOTE: you may need to wait till after class has started to make the icon change.</li>
-    </ul>
-  <p>Here are my icons if you want to use them for the <a href="images/231-teams-icon-b1.png" target="_blank">first block</a> and the <a href="images/231-teams-icon-b2.png" target="_blank">second block</a>.</p>
-
-
-
-
-
-
-
-    <h3>Add Five standard MS Teams channels for the weekly discussions</h3>
-    <p>Add a class channel for each week for class discussions "General Questions - Week 1" etc.</p>
-    <img src="images/channels-general.webp">
-    <p>Select "Standard" channel</p>
-    <img src="images/teams-standard.webp">
-
-    <h3>Add an additional channel called "Job Descriptions (week5). </h3>
-    <p>There will be an assignment later that has student sharing job descriptions they have found.</p>
-
-    <h3>Add many more public Channels to Teams for Groupwork</h3>
-    <p>Add a new channel in MS teams that exactly matches the names of the People>WDD231Groups in canvas (takes about 10
-      minutes)</p>
-    <img src="images/channels.webp">
-
-    <h3>Weekly Hints</h3>
-    <p>If you have advice, tips, or hints for a specific week then post them to the General Questions for the related week. Hopefully this will encourage students to use these weekly channels for classwide communication.</p>
-
-    <h3>Pre-term Checklist</h3>
-    <p>You will get an email link this week for the preterm checlkist. Please review and submit it.</p>
-
-    <h2>Useful Tips</h2>
-    <h3>What Section do I have?</h3>
-    <p>In Canvas, open Settings and choose "Sections" from the top tab navigation. Your section will be listed.</p>
-      <h3>Modify Due Date for One Student</h3>
-      <p>On rare occasions students may have personal challenges and need an extension beyond the two week already provided. In these cases you can modify the "Until" date for a sungle student as follows.</p>
-      <ul>
-        <li>Open an assignment is Canvas</li>
-        <li>Click the Edit button</li>
-        <li>Scroll to the bottom and choose "Assign Access" Manage Assign To</li>
-        <li>Click +Add</li>
-        <li>Add the student to the "Assign to" box</li>
-        <li>Match the due date</li>
-        <li>Change the Until date to add a few days.</li>
-      </ul>
-      <img src="images/due-date.webp">
-
-      <h3>Submission Comments</h3>
-      <p>The grading team will respond to the majority of comments left with assignment submissions. When these comments should be addressed by the course instructor, the graders are susposed to notify you. You can view all of these submission comments in one place as shown below.  </p>
-      <img src="images/canvas-comments.webp">
-      
-      <h3>Checking the Pulse of the class.</h3>
-      <p>Every week there are a set of questions labeled as "W0x Ponder: 60-second Status Update". You can see how much time students are spending (self reported), what went well, and what they are struggling with. </p>
-      <p>Open the weekly survey and click "Survey Statistics". </p>
-      <img src="images/survey-statistics.webp">
-      <p>Some questions will summarize responses.</p>
-      <img src="images/time-spent.webp">
-      <p>For questions that are fill in  the blank, you will need to click "Student Analysis" to generate and then download a report of all student responses.</p>
-      <img src="images/student-analysis.webp">
-      <img src="images/student-analysis2.webp">
-
-
-
-<h3>Notification of Disability Accommodations</h3>
-<p>On occasion you may get a request for disability accommodations for this class. Most of the requested items like extra time on quizzes and deadline extensions are already built into this course.</p>
-<img src="images/accessibility.webp">
-<p>If you find a request for "Group Work Modification” as shown above, please send the student a personalized version of the following message.</p>
-  <p>Your Accessibility Services letter indicates that you are exempt from group work. If you are able to participate in your group, that would be a good learning experience but you are not required to do so. There are questions every week about your participation in a group. Please answer them in the affirmative so you don't miss any points. <br>
-  Bro/Sister Smith
-  </p>
-
-
-
-
-
-
-
-
-
-    <!-- *********************** START WEEK 1 HERE *********************** -->
-    <h2>WEEK 01 Outreach - <span id="week01start"></span></h2>
-    <div class="announce">
-      <p><strong>MS Teams:</strong> On Monday before class begins, post the following Announcement to the "General Questions - Week 1" discussion. </p>
-      <section>
-        <p>SUBJECT: Week 1: Group Work</p>
-        <p>This week, you will NOT have a one-hour group meeting to attend. Instead, you can just introduce yourself to your new group of friends.</p>
-        <p>Asynchronously work with the course via the MS Teams channel to meet this week's requirements on building your course portal home page. You could share your page link with the other members of your group. If you have any questions, please post them in the appropriate weekly discussion channel of MS Teams.</p>
-      </section>
-    </div>
-
-    <div class="problem">
-      <p><strong>Slow Starting:</strong> Towards the end of the week, open the "People" tab on the left side. Choose the "WDD231Teams" Tab. From the three dots, select "Message all unasigned Students" and send a personalized version of the following message.</p>
-      <img src="images/nogroup.png" alt="no group">
-      <section>
-        <p>SUBJECT: Group Signup</p>
-        <p>One of your first assignments is to pick a group in Canvas and then sign up for the same group in MS Teams. You then introduce yourself to the rest of the group members in MS Teams. You will NOT have a meeting the first week. While many students have completed this task, there are still several who have not. Please try to complete this assignment by the end of the day.<br>Bro/Sis Smith</p>
-      </section>
-    </div>
-
-    <div class="problem">
-      <p><strong>No Submission for Course Home Page:</strong> Towards the end of the week open Canvas, choose Grades and select "W01 Activity: Course Home Page" assignment. Choose "Message Students Who" > Have not yet submitted. Send a personalized version of the following message:</p>
-      <section>
-        <p>SUBJECT: Course Home Page Progress</p>
-        <p>I noticed that you have not yet submitted your course home page on GitHub. I know it's not due yet, but I wanted to see how you're doing with the assignment. <br>
-          If you need a review from the previous class (sometimes we forget stuff 😜), here is a link with four tutorials  that may be helpful.<br>https://byui-cse.github.io/wdd130-ww-course/week01/
-         <ul>
-          <li>Editing Code: Visual Studio Code</li>
-          <li>Testing: Web Developer Browser Extension</li>
-          <li>Hosting Your Work: GitHub Account</li>
-          <li>Uploading: Installing Git</li>
-         </ul>
-          <br>Bro/Sis Smith</p>
-      </section>
-    </div>
-
-    <div class="problem">
-      <p><strong>Non-participating Students:</strong> Towards the end of the week, message students who have not yet submitted the "W01 Setup: Technology Stack". Inform them that this is a 7-week course, and remind them of the upcoming registration deadline. Send a personalized version of the following message:</p>
-      <section>
-        <p>SUBJECT: Checking In</p>
-        <p>I noticed you haven't turned in the first assignment. This course is only seven weeks long and ends on <span id="classEnd"></span>. To succeed in this block, it will be important for you to get started as soon as you can. Is there something that might be keeping you from getting started in this class? Please email me so we can work together to help you have a successful experience.</p>
-        <p>If you do not intend to participate in this course this term, I recommend that you drop the course before the registration deadline on <span id="registerDeadline"></span>. If you drop before then, you will receive a full tuition refund. If you choose to drop the class after the registration deadline, you will not be able to receive a tuition refund unless you withdraw from all your courses this term.</p>
-        <p>I look forward to hearing from you and hope you have a successful experience!
-          <br>Bro/Sister Smith</p>
-      </section>
-    </div>
-
-    <div class="risk">
-      <p><strong>Instructor-initiated Drops:</strong> According to According to <a
-          href="https://www.byui.edu/catalog/#/policy/SJ8sw4Val?bc=true&bcCurrent=Instructor-Initiated%20Drops&bcGroup=Registration&bcItemType=policies"
-          target="_blank">BYU-Idaho's Instructor-initiated Drop Policy</a>, you may request to drop any students who
-        have not participated in your class by the start of Lesson 02. You initiate the drop process by submitting a
-        form distributed by the Registrar's Office or contacting <a href="mailto:registration@byui.edu">registration office</a>. If you choose to drop students, please make sure you have send a couple of emails letting them know the consequences of not participating. It's hard to undrop them if they suddenly show an interest in class,
-        but it is possible.</p>
-    </div>
-
-    
-    <div class="risk">
-      <p><b>All Week:</b> Keep checking MS Teams and your email and respond to any questions that have been posted.</p>
-    </div><!-- end risk -->
-
-
-
-    <div class="outreachdue">
-      <p><a href="https://byui.az1.qualtrics.com/jfe/form/SV_8oF267U5kSJoLY2?WeekNo=1&CMG=1&CourseCode=WDD%20231">Report your week 1 outreach</a> by midnight on <span id="week01report"></span></p>
-    </div>
-
-    <p class="pop"><strong>Best Practice:</strong> As you monitor late adds in your class, y<span>ou may find it helpful
-        to copy the names of the students you email in your initial welcome email and put them into a spreadsheet. This
-        will help you spot changes in your students when you compare the initial outreach to your updated contact list.
-    </p>
-
-
-
-
-
-
-
-
-
-
-
-    <!-- *********************** START WEEK 2 HERE *********************** -->
-    <h2>WEEK 02 Outreach - <span id="week02start"></span></h2>
-
-    <div class="announce">
-      <p><strong>MS Teams:</strong> On Monday, post this announcement to Canvas or Teams.</p>
-      <section>
-        <p>SUBJECT: Week 2: Looking forward to this module.</p>
-        <p>This week will be fast and furious as you learn to build you own JSON data file and then import it using fetch. It's a powerful skill to have on your resume. You should have some fun when you learn to animate your small screen navigation using CSS Grid and transitions. It's pretty cool. 🥰 If you have any questions, please post them in the appropriate weekly discussion channel of MS Teams.</p>
-      </section>
-    </div>
-
-
-    <div class="problem">
-        <p><strong>Group of One:</strong> On Monday, go to Canvas and review the  People > WDD231Groups and identify all students in a group of one. Return to Canvas and using the Inbox > Compose a New Message send a message to this list of single group students.</p>
-        <section>
-          <p>SUBJECT: Selecting a new group</p>
-          <p>You appear to be the only student who signed up for your group time. 🤪 To complete the group activities each week, you must join another group. Please go back to Canvas and add yourself to a different group, and then go to Teams and introduce yourself to your new group. 
-          You must attend a group meeting this week, so do this today if possible.<br>
-          Bro/Sister Smith</p>
-        </section>
-    </div><!-- end problem -->
-
-    <div class="problem">
-      <p><strong>No Group:</strong> On Monday, open the "People" tab on the left side. Choose the "WDD231Teams" Tab. From the three dots, select "Message all unasigned Students" and send a personalized version of the following message.</p>
-      <section>
-        <p>SUBJECT: Selecting a group</p>
-        <p>One of your first assignments for last week was to pick a group in Canvas and then sign up for the same group in MS Teams. I see that you have not yet signed up for a Canvas group.🥲  Please try to complete this assignment by the end of the day.<br>
-          Bro/Sister Smith</p>
-      </section>
-  </div><!-- end problem -->
-
-      <div class="problem">
-      <p><strong>Late Work:</strong> On Tuesday, select the <strong>W01 Assignment: Course Home Page</strong> in the gradebook
-        and message students who have <b>not submitted</b> the assignment. Send a personalized version of the following
-        email.</p>
-      <section>
-        <p>SUBJECT: Missing the Week 1 Course Home Page Development</p>
-        <p>I noticed you have not turned in the first assignment. Because the course is only seven weeks long, to succeed, it will be vital for you to be engaged in this course every week. Is there something that might be keeping you from engaging in this class? Please email me so we can work together to help you have a successful term.😊</p>
-
-        <p>If you do not intend to participate in this course this term, I recommend that you drop the course before the drop deadline on <span id="dropDeadline"></span>. Depending on your situation, you may be able to receive a prorated tuition refund. If you choose to drop the class after the drop deadline, you will receive a "W" grade on your transcript for this course.</p>
-
-        <p>Were you able to work through all the Learning Activities for last week?</p>
-
-        <p>I look forward to hearing from you and hope you have a successful experience!<br>Bro/Sister Smith</p>
-      </section>
-    </div><!-- end problem -->
-
-
-
-    <div class="risk">
-      <p><b>All Week:</b> Keep checking MS Teams and your email and respond to any questions that have been posted.</p>
-    </div><!-- end risk -->
-
-
-    <div class="good">
-      <p><strong>Positive Outreach: </strong>On Thursday, identify students who scored more than 24/30 on <strong>W01 Assignment: Course Home Page</strong> and send them a message congratulating them on their work.</p>
-        <section>
-          <p>SUBJECT: Good work on your Home Page</p>
-          <p>I see that you have done well on the Home Page from last week. Keep up the good work.<br>
-            Do you ever find yourself without power or internet access when trying to work on this class?
-            <br>Bro/Sister Smith</p>
-        </section>
-    </div><!-- end good -->
-
-
-    <div class="outreachdue">
-      <p><a href="https://byui.az1.qualtrics.com/jfe/form/SV_8oF267U5kSJoLY2?WeekNo=2&CMG=1&CourseCode=WDD%20231">Report your week 2 outreach</a>
-        by midnight on <span id="week02report"></span></p>
-    </div>
-
-
-
-
-
-
-    <!-- *********************** START WEEK 3 HERE *********************** -->
-    <h2>WEEK 03 Outreach - <span id="week03start"></span></h2>
-
-    <div class="announce">
-      <p><strong>MS Teams:</strong> On Monday, post this announcement to Canvas or Teams.</p>
-      <section>
-        <p>SUBJECT: Week 3: Playing with the Big Boys Now</p>
-        <p>This week you get to interact with a professional level weather API and report dynamic data on your very own website. Another really great skill  for your portfolio toolbox. If you have any questions, please post them in the appropriate weekly discussion channel of MS Teams.</p>
-      </section>
-    </div>
-
-    <div class="problem">
-      <p><strong>Late Work:</strong> On Monday, select the <strong>W02 Assignment: Chamber Directory Page</strong> in the gradebook
-        and message students who have <b>not submitted</b> the assignment. Send a personalized version of the following
-        email.</p>
-      <section>
-        <p>SUBJECT: Missing your W02 Assignment: Chamber Directory Page</p>
-        <p>I noticed that you have not yet submitted last week's Chamber Directory Page. Remember that it's not too late! Your assignment will be graded without a late penalty so please get it in as soon as you can. 
-          <br>Do you ever find yourself without power or internet access when trying to work on this class?
-          <br>Bro/Sister Smith</p>
-      </section>
-    </div><!-- end problem -->
-
-    <div class="problem">
-      <p><strong>Group Check:</strong> On Monday, go back into Canvas > People > WDD231Groups tab and note the students who are still not signed up for a group. Then look at the grades tab and see which ones have participated and which have not.</p><p>Send <strong>one</strong> of the following messages to each student using the envelope as shown below (green arrow).</p>
-      <section>
-        <p>SUBJECT: Submitting assignments but no group yet.</p>
-        <p>I see you have been submitting assignments for class but you have not joined a Canvas group yet. <br>
-          Did you join a Teams group but forget to also join the same group in Canvas?<br>
-        Did you forget to sign up for a group for this class?<br> Is there something I can help with?</p>
-        <p>SUBJECT: Not signed up for a group in WDD231.</p>
-        <p>I see that you have not submitted any assignments for WDD231 class and you have not joined a group yet. Are you going to continue with this class or are you planning to drop? </p>
-      </section>
-      <img src="images/canvas-student.webp">
-    </div><!-- end problem -->
-
-
-    <div class="risk">
-      <p><b>All Week:</b> Keep checking MS Teams and your email and respond to any questions that have been posted.</p>
-    </div><!-- end risk -->
-    <div class="risk">
-      <p><b>Wednesday:</b> Open module 2 and find the "W02 Ponder: 60-second Status Update". Download the student submissions. </p>
-      <ol>
-        <li>Click the quiz in the module.</li>
-        <li>Select "Survey Statistics" in the top right corner.</li>
-        <li>Click the "Student Analysis" button to generate a report.</li>
-        <li>A .csv file should be downloaded to your computer.</li>
-      </ol>
-      <p>See if there are any trends in the submissions that need to be looked at.</p>
-    </div><!-- end risk -->
-
-
-    <div class="good">
-      <p><strong>Positive Outreach: </strong>On Thursday, identify students who scored more than 24/30 on "<strong>W02 Assignment: Chamber Directory Page</strong>" and send them a message congratulating them on their work.</p>
-        <section>
-          <p>SUBJECT: Congratulations on your directory page</p>
-          <p>I see that you have done well on the Directory Page from last week.
-            <br>Have you had opportunities to help out members of your team? 😁
-            <br>Bro/Sister Smith</p>
-        </section>
-    </div><!-- end good -->
-
-    <div class="risk">
-      <p><strong>Group:</strong> On Friday, send a message to ALL students.</p>
-      <section>
-        <p>SUBJECT: Group Functionality</p>
-        <p>Is your group functioning? If you need to change groups, please let me know.
-          <br>Bro/Sister Smith</p>
-      </section>
-    </div><!-- end risk -->
-    
-
-    <div class="outreachdue">
-      <p><a href="https://byui.az1.qualtrics.com/jfe/form/SV_8oF267U5kSJoLY2?WeekNo=3&CMG=1&CourseCode=WDD%20231">Report your week 3 outreach</a>
-        by midnight on <span id="week03report"></span></p>
-    </div>
-
-
-
-
-
-
-    <!-- *********************** START WEEK 4 HERE *********************** -->
-    <h2>WEEK 04 Outreach - <span id="week04start"></span></h2>
-
-    <div class="announce">
-      <p><strong>MS Teams:</strong> On Monday, post this announcement to Canvas or Teams.</p>
-      <section>
-        <p>SUBJECT: Week 4: More tools for your toolbox</p>
-        <p>This week you get to implement and design an HTML5 popup modal. We will also take it to the next level with dymanivally creating these modals using JavaScript. Before you go, we also have an enhancment  to building a form (you learned this in WDD131). We are going to grab data from a URL string and display it onto a web page. 😊 If you have any questions, please post them in the appropriate weekly discussion channel of MS Teams.</p>
-      </section>
-    </div>
-    
-    <div class="problem">
-      <p><strong>Late Work:</strong> On Monday, select the <strong>W03 Assignment: Chamber Home Page</strong> in the gradebook
-        and message students who have <b>not submitted</b> the assignment. Send a personalized version of the following
-        email.</p>
-      <section>
-        <p>SUBJECT: Missing your Chamber Home Page</p>
-        <p>I noticed that you have not yet submitted last week's home page assignment. Please don't give up because you can still turn it in. There is no late penalty.
-        <p>Has your team been able to assist you with this week's assignment?</p>
-          <br>Bro/Sister Smith</p>
-      </section>
-    </div><!-- end problem -->
-
-    <div class="risk">
-      <p><b>All Week:</b> Keep checking MS Teams and your email and respond to any questions that have been posted.</p>
-    </div><!-- end risk -->
-
-
-    <div class="good">
-      <p><strong>Positive Outreach: </strong>On Thursday, identify students who scored more than 16/20 on <strong>W03 Assignment: Chamber Home Page</strong> and send them a message congratulating them on their work.</p>
-        <section>
-          <p>SUBJECT: Congratulations on your Chamber home page</p>
-          <p>I see that you have done well on the Chamber home Page assignment from last week.</p>
-          <p>There are several videos in this class, do you ever turn on the captions [CC] while you watch?</p>
-          <br>Bro/Sister Smith</p>
-        </section>
-    </div><!-- end good -->
-
-
-    <div class="problem">
-      <p><strong>WITHDRAWAL DEADLINE:</strong> On Saturday, select the "W03 Team Activity: Home Page—Responsive Images" in the gradebook and message students who have <b>not submitted</b> the assignment. Send a personalized version of the following email.</p>
-      <section>
-        <p>SUBJECT: WITHDRAWAL DEADLINE</p>
-        <p>The deadline to withdraw from this block course and receive a "W" grade and not a letter grade is <a href="https://www.byui.edu/academic-calendar/#second-block-classes" target="_blank">coming up really soon</a>. So, if you think you may not be able to complete the course with a grade you want, you may want to <a href="https://byui-help.screenstepslive.com/a/884683-dropping-withdrawing-from-a-class">drop the class</a> today. <br>Bro/Sister Smith</p>
-      </section>
-    </div><!-- end problem -->
-
-
-    <div class="outreachdue">
-      <p><a href="https://byui.az1.qualtrics.com/jfe/form/SV_8oF267U5kSJoLY2?WeekNo=4&CMG=1&CourseCode=WDD%20231">Report your week 4 outreach</a>
-        by midnight on <span id="week04report"></span></p>
-    </div>
-
-
-
-
-
-
-    <!-- *********************** START WEEK 5 HERE *********************** -->
-    <h2>WEEK 05 Outreach - <span id="week05start"></span></h2>
-
-    <div class="announce">
-      <p><strong>MS Teams:</strong> On Monday, post this announcement to Canvas or Teams.</p>
-      <section>
-        <p>SUBJECT: Week 5: Finishing up the Chamber Page</p>
-        <p>Were getting close to the end so hang on and keep taking your vitiman pills. This week you get to build a new page for your chamber web site that allows people to discover your home town. So be proud of your town and show us some cool things about where you live. If you have any questions, please post them in the appropriate weekly discussion channel of MS Teams. If you have any questions, please post them in the appropriate weekly discussion channel of MS Teams.</p>
-      </section>
-    </div>
-
-    <div class="problem">
-      <p><strong>Late Work:</strong> On Monday, select the <strong>W04 Assignment: Chamber Join Page</strong> in the gradebook
-        and message students who have <b>not submitted</b> the assignment. Send a personalized version of the following
-        email.</p>
-      <section>
-        <p>SUBJECT: Missing the join page from last week</p>
-        <p>I noticed that you have not yet submitted last week's web form assignment on your GitHub home page. As you know, you can still turn it in but we are getting close to the end of the semester.
-          <p>There are several videos in this class, do you ever turn on the captions [CC] while you watch?</p>
+  <header>
+    <img src="images/favicon-32x32.png">
+    <span>WDD231 Student Outreach</span>
+  </header>
+
+
+  <main>
+    <p>Student outreach includes any work we do to build relationships with students, help clarify course content and
+      assignment expectations, and encourage students to persist and do their best in the class. Weekly outreach
+      messages will be provided with the expectation that you will personalize them to fit your personality.</p>
+
+
+    <!-- ************************ Before Term Starts ***************************** -->
+    <details id="week01start">
+      <summary>Before Term Starts - Setup Class <time class="date-2a"></time></summary>
+
+
+      <section class="canvas">
+        <button class="wk0a"></button>
+        <p>On <time class="date-2b"></time> before class begins, modify the following message and then email it to all
+          students using Canvas
+          Inbox</p>
+        <div>
+          <p><b>SUBJECT:</b> Welcome to WDD231, the best class ever!</p>
+          <p>What a fantastic opportunity to work with students from around the world who share a common faith.</p>
+          <p>Class begins on <time class="date1a"></time>, and we must hit the ground running.</p>
+          <p>Canvas should be open now if you want to get started early. No Pressure here.😃</p>
+          <p>You need to dedicate many hours per week to master these concepts. If you don't have that kind of time, you
+            may
+            want to take the class later when you can devote enough time to be successful.</p>
+          <p>You will be using VS Code to create all your assignments and then hosting them on GitHub. Both are tools
+            used
+            by professionals in the field. </p>
+          <p>We will be using MS Teams for communication and teamwork, so ensure you have it installed and ready to go.
+          </p>
+          <p>It's going to be a fantastic and fast-paced ride for the next few weeks, so take your vitamin pills, and
+            let's
+            get started.
+          <p>If you find yourself overwhelmed within the first week, you can drop the class using these instructions.
+          </p>
+          <p>https://byui-help.screenstepslive.com/a/884683-how-to-withdraw-from-class</p>
           <p>Bro/Sister Smith</p>
-      </section>
-    </div><!-- end problem -->
 
-    <div class="risk">
-      <p><b>All Week:</b> Keep checking MS Teams and your email and respond to any questions that have been posted.</p>
-    </div><!-- end risk -->
+        </div>
+      </section> <!-- End of this section -->
 
-
-    <div class="good">
-      <p><strong>Positive Outreach: </strong>On Thursday, identify students who scored more than 25/30 on <strong>W04 Assignment: Chamber Join Page</strong> and send them a message congratulating them on their work.</p>
-        <section>
-          <p>SUBJECT: Congratulations on completing the join form on your Chamber site.</p>
-          <p>I see that you have successfully completed the Join Page for the Chamber of Commerce assignment from last week.</p>
-          <p>Was your team able to meet this week?</p> 
+      <section class="canvas">
+        <button class="wk0b"></button>
+        <p>On <time class="date-2c"></time> before class begins, post your version of the following message to Canvas
+          Announcements</p>
+        <div>
+          <p><b>SUBJECT:</b> Welcome to Class</p>
+          <p>Thanks for joining us for another term to learn about web front-end development.</p>
+          <p>We will use MS Teams for announcements, group communication, and direct questions between students and
+            teachers. I will check messages every day.</p>
+          <p>I will NOT be posting any further announcements in Canvas. 😄</p>
           <p>Bro/Sister Smith</p>
-        </section>
-    </div><!-- end good -->
+        </div>
+      </section> <!-- End of this section -->
 
-    <div class="outreachdue">
-      <p><a href="https://byui.az1.qualtrics.com/jfe/form/SV_8oF267U5kSJoLY2?WeekNo=5&CMG=1&CourseCode=WDD%20231">Report your week 5 outreach</a>
-        by midnight on <span id="week05report"></span></p>
-    </div>
+      <section class="task">
+        <button class="wk0c"></button>
+        <p>Connect Teams and Canvas</p>
+        <div>
+          <p>Open Canvas, select settings, click the "Intergrations" tab and activate Microsoft Sync. Click the "Sync
+            Now"
+            button. W A I T. </p>
+          <img src="images/teams-integrations.webp">
 
+          <h3>Sort the Canvas Gradebook</h3>
+          <p>While your waiting, sort the Canvas gradebok, it makes finding the current assignent much easier. Open your
+            course in Canvas and choose the "Grades". Select the gear in the upper right corner.</p>
+          <img src="images/sort-gradebook.webp">
+          <h3>Activate your class in MS Teams</h3>
+          <p>Once the sync process has finished, you will have a new Teams for your new class. You need to activate the
+            class
+            and let the students in.</p>
+          <img src="images/teams-activate.webp">
+          <img src="images/teams-activate2.webp">
+          
 
-
-
-
-    <!-- *********************** START WEEK 6 HERE *********************** -->
-    <h2>WEEK 06 Outreach - <span id="week06start"></span></h2>
-
-    <div class="announce">
-      <p><strong>MS Teams:</strong> On Monday, post this announcement to Canvas or Teams.</p>
-      <section>
-        <p>SUBJECT: Week 6: The beginning of the end of this class.</p>
-        <p>The final assessment for this class is a multiple-page website, and the best part is that you get to choose the topic.</p>
-
-          <p>Last week, you picked the topic and submitted a project site plan as a single web page.</p>
-
-            <p>This week, you are creating that site! As Elder Uchtdorf shared, "<strong>The desire to create is one of the deepest yearnings of the human soul</strong>"</p>
-
-              <p>This website will show everything you have learned in this and previous classes for this certificate.</p>
-
-                <p>As you may have noticed, there is no teamwork allowed for this project, you on your own.😇</p>
-
-                  <p>You will create a new repository inside your WDD231 account and host all the files there.</p>
-
-                  <p>My friends, working with you during this class has been a great experience; I wish you the best as you create something extraordinary.</p>
-      </section>
-    </div>
-
-    <div class="problem">
-      <p><strong>Late Work:</strong> On Monday, select the <strong>W05 Assignment: Chamber Discover Page</strong> in the gradebook and message students who have <b>not submitted</b> the assignment. Send a personalized version of the following email.</p>
-      <section>
-        <p>SUBJECT: Missing last weeks discover page</p>
-        <p>I noticed that you have not yet submitted last week's discover page on your Chamber Site. As you know, you can still turn it in without late penalties. </p>
-        <p>Was your team able to meet this week?</p>
-        <p>Bro/Sister Smith</p>
-      </section>
-    </div><!-- end problem -->
-
-    <div class="risk">
-      <p><b>All Week:</b> Keep checking MS Teams and your email and respond to any questions that have been posted.</p>
-    </div><!-- end risk -->
+        </div>
+      </section> <!-- End of this section -->
 
 
-    <div class="good">
-      <p><strong>Positive Outreach: </strong>On Thursday, identify students who scored more than 25/30 on <strong>W05 Assignment: Chamber Discover Page</strong> and send them a message congratulating them on their work.</p>
-        <section>
-          <p>SUBJECT: Congratulations on doing well on the Chamber Discover page.</p>
-          <p>I see that you did a great job on your chamber discover assignment from last week.</p>
-            <p>How has this course helped you become a better web developer? </p>
-            <p>Bro/Sister Smith</p>
-        </section>
-    </div><!-- end good -->
-
-    <div class="outreachdue">
-      <p><a href="https://byui.az1.qualtrics.com/jfe/form/SV_8oF267U5kSJoLY2?WeekNo=6&CMG=1&CourseCode=WDD%20231">Report your week 6 outreach</a>
-        by midnight on <span id="week06report"></span></p>
-    </div>
+      <section class="teams">
+        <button class="wk0d"></button>
+        <p>Post a message in Teams</p>
+        <div>
+          <p>Post a message NOT to use the "General Channel". When we get over 100 people talking over 6 weeks, this
+            becomes a
+            mess.🤪</p>
+          <img src="images/teams-message.webp">
+        </div>
+      </section> <!-- End of this section -->
 
 
 
-    <!-- *********************** START WEEK 7 HERE *********************** -->
-    <h2>WEEK 07 Outreach - <span id="week07start"></span></h2>
-
-    <div class="announce">
-      <p><strong>MS Teams:</strong> On Monday, post this announcement to Canvas or Teams.</p>
-      <section>
-        <p>SUBJECT: Final Exam</p>
-        <p>This week is the big exam so I will just go over here and wait quietly till you are done. Good Luck 😊</p>
-      </section>
-    </div>
-
-    <div class="problem">
-      <p>On Monday, send the following message to <b>ALL</b> students in the course. Use the Canvas InBox > Compose a New Message > to all in this class.</p>
-      <img src="images/msgAllStudents.webp">
-      <section>
-      <p>SUBJECT: Class ends very soon</p>
-      <p>This awesome WDD231 block class will close on <span id="classOver"></span> at midnight. You must have ALL your assignments submitted by then. The most important submission is your finished <strong>Individual Website Project</strong>. If you have late submissions from units 5 and 6, make sure to resubmit those before class ends as well. Remember you have three opportunities for a regrade. 
-      <br>Have you taken the opportunity to pray for the Holy Ghost to help you with any part of your assignment this week?<br>Bro/SisterSmith</p>
-    </section>
-    </div><!-- end problem -->
-
-    <div class="good">
-      <p><strong>Positive Outreach: </strong>On Wednesday, identify students who scored more than 0.5 on the "W07 End-of-Course Evaluation" and send them a message thanking them for their feedback.</p>
-        <section>
-          <p>SUBJECT: Providing Feedback</p>
-          <p>Thanks for taking the time to complete the end-of-course evaluation. We are constantly looking for ways to improve the course and your feedback is important.</p>
-        </section>
-    </div><!-- end good -->
-
-    <div class="outreachdue">
-      <p><a href="https://byui.az1.qualtrics.com/jfe/form/SV_8oF267U5kSJoLY2?WeekNo=7&CMG=1&CourseCode=WDD%20231">Report your week 7 outreach</a> by midnight on <span id="week07report"></span></p>
-    </div>
+      <section class="task">
+        <button class="wk0e"></button>
+        <p>Change the Teams Information.</p>
+        <div>
+          <ul>
+            <li>Select the Teams icon on the left panel.</li>
+            <li>Click the new WDD231 team in your list.</li>
+            <li>To the right of the team name, select the &mldr; and choose "Manage team" from the drop down menu</li>
+            <li>Click the Settings tab. Then expand "Team details" section.</li>
+            <li>Update the team name to include WDD231 and the term number 1-6 (as appropiate)</li>
+            <li>Click the "Change picture" link and select "Upload" to choose a new image from your files.</li>
+            <li>Remember to save. </li>
+            <li>NOTE: you may need to wait till after class has started to make the icon change.</li>
+          </ul>
+          <p>Here are the PNG icons I use for my classes.</p>
+          <p class="icons">
+            <img src="images/teams-icon-t1.png" alt="teams term 1">
+            <img src="images/teams-icon-t2.png" alt="teams term 2">
+            <img src="images/teams-icon-t3.png" alt="teams term 3">
+            <img src="images/teams-icon-t4.png" alt="teams term 4">
+            <img src="images/teams-icon-t5.png" alt="teams term 5">
+            <img src="images/teams-icon-t6.png" alt="teams term 6">
+          </p>
+        </div>
+      </section> <!-- End of this section -->
 
 
 
-  <script src="dates.js" type="module"></script>
+
+
+      <section class="task">
+        <button class="wk0f"></button>
+        <p>Add Five standard MS Teams channels for the weekly discussions</p>
+        <div>
+          <p>Add a class channel for each week for class discussions "General Questions - Week 1" etc.</p>
+          <img src="images/channels-general.webp">
+          <p>Select "Standard" channel</p>
+          <img src="images/teams-standard.webp">
+
+          <h3>Add an additional channel called "Job Descriptions (week5). </h3>
+          <p>There will be an assignment later that has student sharing job descriptions they have found.</p>
+
+          <h3>Add many more public Channels to Teams for Groupwork</h3>
+          <p>Add a new channel in MS teams that exactly matches the names of the People>WDD231Groups in canvas (takes
+            about 10
+            minutes)</p>
+          <img src="images/channels.webp">
+          <h3>Weekly Hints</h3>
+          <p>If you have advice, tips, or hints for a specific week then post them to the General Questions for the
+            related
+            week. Hopefully this will encourage students to use these weekly channels for classwide communication.</p>
+        </div>
+      </section> <!-- End of this section -->
+
+      <section class="teams">
+        <button class="wk0g"></button>
+        <p>Pre-term Checklist</p>
+        <div>
+          <p>You will get an email link this week for the preterm checlkist. Please review and submit it.</p>
+        </div>
+      </section> <!-- End of this section -->
+
+    </details> <!-- end before term starts -->
+
+
+    <!-- ************************ Useful Tips ***************************** -->
+    <details id="week01start">
+      <summary>Useful Tips</summary>
+      <p><strong>Communication Channels:</strong> When communicating with students one-on-one, use <strong>MS
+          Teams</strong>. When sending group outreach messages for assignment progress, use <strong>Canvas
+          Gradebook</strong>.</p>
+      <section class="task">
+        <p>What Section do I have?</p>
+        <div>
+          <p>In Canvas, open Settings and choose "Sections" from the top tab navigation. Your section will be listed.
+          </p>
+        </div>
+      </section> <!-- End of this section -->
+
+      <section class="task">
+        <p>Modify Due Date for One Student</p>
+        <div>
+          <p>On rare occasions students may have personal challenges and need an extension beyond the two week already
+            provided. In these cases you can modify the "Until" date for a sungle student as follows.</p>
+          <ul>
+            <li>Open an assignment is Canvas</li>
+            <li>Click the Edit button</li>
+            <li>Scroll to the bottom and choose "Assign Access" Manage Assign To</li>
+            <li>Click +Add</li>
+            <li>Add the student to the "Assign to" box</li>
+            <li>Match the due date</li>
+            <li>Change the Until date to add a few days.</li>
+          </ul>
+          <img src="images/due-date.webp">
+        </div>
+      </section> <!-- End of this section -->
+
+      <section class="task">
+        <p>Submission Comments</p>
+        <div>
+          <p>The grading team will respond to the majority of comments left with assignment submissions. When these
+            comments
+            should be addressed by the course instructor, the graders are susposed to notify you. You can view all of
+            these
+            submission comments in one place as shown below. </p>
+          <img src="images/canvas-comments.webp">
+        </div>
+      </section> <!-- End of this section -->
+
+      <section class="task">
+        <p>Checking the Pulse of the class.</p>
+        <div>
+          <p>Every week there are a set of questions labeled as "W0x Ponder: 60-second Status Update". You can see how
+            much
+            time students are spending (self reported), what went well, and what they are struggling with. </p>
+          <p>Open the weekly survey and click "Survey Statistics". </p>
+          <img src="images/survey-statistics.webp">
+          <p>Some questions will summarize responses.</p>
+          <img src="images/time-spent.webp">
+          <p>For questions that are fill in the blank, you will need to click "Student Analysis" to generate and then
+            download
+            a report of all student responses.</p>
+          <img src="images/student-analysis.webp">
+          <img src="images/student-analysis2.webp">
+        </div>
+      </section> <!-- End of this section -->
+
+
+      <section class="task">
+        <p>Submission Comments</p>
+        <div>
+          <p>The grading team will respond to the majority of comments left with assignment submissions. When these
+            comments
+            should be addressed by the course instructor, the graders are susposed to notify you. You can view all of
+            these
+            submission comments in one place as shown below. </p>
+          <img src="images/canvas-comments.webp">
+        </div>
+      </section> <!-- End of this section -->
+
+      <section class="task">
+        <p>Notification of Disability Accommodations</p>
+        <div>
+          <p>On occasion you may get a request for disability accommodations for this class. Most of the requested items
+            like
+            extra time on quizzes and deadline extensions are already built into this course.</p>
+          <img src="images/accessibility.webp">
+          <p>If you find a request for "Group Work Modification” as shown above, please send the student a personalized
+            version of the following message.</p>
+          <p>Your Accessibility Services letter indicates that you are exempt from group work. If you are able to
+            participate
+            in your group, that would be a good learning experience but you are not required to do so. There are
+            questions
+            every week about your participation in a group. Please answer them in the affirmative so you don't miss any
+            points. <br>
+            Bro/Sister Smith
+          </p>
+        </div>
+      </section> <!-- End of this section -->
+
+
+    </details> <!-- end useful Tips -->
+
+
+    <!-- ************************ Useful Tips ***************************** -->
+    <details>
+      <summary>Audit Tool Errors</summary>
+      <h2>Repository folder name</h2>
+      <p>Insure that the folder name is lowercase "wdd231"</p>
+      <h2>CSS Errors</h2>
+      <p>Test the page using <a href="https://cssstats.com/" target="_blank">cssstats.com</a>. If you get an error then see if you can identify the css problem using <a href="https://jigsaw.w3.org/css-validator/">CSS Validation Service</a></p>
+      <h2>Correct path to the assignment. (lowercase)</h2>
+     
+        <dl>
+          <dt>W01 Assignment: Course Home Page</dt>
+          <dd>index.html</dd>
+          <dt>W02: Chamber Directory Page</dt>
+          <dd>chamber/directory.html</dd>
+          <dt>W03: Chamber Home Page</dt>
+          <dd>chamber/index.html</dd>
+          <dt>W04: Chamber Membership Join Page</dt>
+          <dd>chamber/join.html</dd>
+          <dt>W05: Chamber Discover Page</dt>
+          <dd>chamber/discover.html</dd>
+        </dl>
+    <h2>Comments in CSS can cause errors</h2>
+    <p>In this example, when I found and removed this multiline comment the audit tool began working.</p>
+    <img src="images/audit1.webp">
+    <p>In this example, when I removed the final comment from the larger.css file it started working.</p>
+    <img src="images/audit2.webp">
+    </details> <!-- end audit errorsw -->
+
+    <!-- ************************ Week One ***************************** -->
+    <details id="week01start">
+      <summary>Week 1 <time class="date1b"></time></summary>
+
+      <section class="teams">
+        <button class="wk1a"></button>
+        <p>On <time class="date1c"></time> post the following Teams Announcement to the "General Questions -
+          Week 1" discussion.</p>
+        <div>
+          <p><b>SUBJECT:</b> Week 1: Group Work</p>
+          <p>This week, you will NOT have a one-hour group meeting to attend. Instead, you can just introduce yourself
+            to your new group of friends.</p>
+          <p>Asynchronously work with the course via the MS Teams channel to meet this week's requirements on building
+            your course portal home page. You could share your page link with the other members of your group. If you
+            have any questions, please post them in the appropriate weekly discussion channel of MS Teams.</p>
+        </div>
+      </section> <!-- End of this section -->
+
+
+      <section class="canvas">
+        <button class="wk1b"></button>
+        <p><b>Slow Starting:</b> On <time class="date5a"></time>, open the "People" tab on the left side. Choose the "WDD231Teams" Tab. From the three dots, select "Message all unasigned Students" and send a personalized version of the following message.
+          <img src="images/nogroup.png">
+        </p>
+        
+        <div>
+          <p><b>SUBJECT:</b> Group Signup</p>
+          <p>One of your first assignments is to pick a group in Canvas and then sign up for the same group in MS
+            Teams. You then introduce yourself to the rest of the group members in MS Teams. You will NOT have a
+            meeting the first week. While many students have completed this task, there are still several who have
+            not. Please try to complete this assignment by the end of the day.</p>
+        </div>
+      </section><!-- End of this section -->
+
+
+      <section class="canvas">
+        <button class="wk1c"></button>
+        <p><b>No Submission for Course Home Page:</b> On <time class="date5b"></time> open Canvas, choose
+          Grades and select "W01 Activity: Course Home Page" assignment. Choose "Message Students Who" > Have not yet
+          submitted. Send a personalized version of the following message.</p>
+        <div>
+          <p><b>SUBJECT:</b> Course Home Page Progress</p>
+          <p>I noticed that you have not yet submitted your course home page on GitHub. I know it's not due yet, but I
+            wanted to see how you're doing with the assignment.
+            If you need a review from the previous class (sometimes we forget stuff 😜), here is a link with four
+            tutorials that may be helpful.<br>
+            https://byui-cse.github.io/wdd130-ww-course/week01/</p>
+          <ul>
+            <li>Editing Code: Visual Studio Code</li>
+            <li>Testing: Web Developer Browser Extension</li>
+            <li>Hosting Your Work: GitHub Account</li>
+            <li>Uploading: Installing Git</li>
+          </ul>
+        </div>
+      </section><!-- End of this section -->
+
+      <section class="canvas">
+        <button class="wk1d"></button>
+        <p><b>Non-participating Students:</b> On <time class="date6a"></time>, message students who have not
+          yet submitted the "W01 Setup: Technology Stack". Inform them that this is a 7-week course, and remind them
+          of the upcoming registration deadline. Send a personalized version of the following message.</p>
+        <div>
+          <p><b>SUBJECT:</b> Checking In</p>
+          <p>I noticed you haven't turned in the first assignment. This course is only seven weeks long and ends on
+            <time class="date48z"></time>. To succeed in this block, it will be important for you to get started as
+            soon as you can. Is there something that might be keeping you from getting started in this class? Please
+            email me so we can work together to help you have a successful experience.
+          </p>
+          <p>If you do not intend to participate in this course this term, I recommend that you drop the course before
+            the registration deadline on xxxxxxxxxxxx. If you drop before then, you will receive a full tuition
+            refund. If you choose to drop the class after the registration deadline, you will not be able to receive a
+            tuition refund unless you withdraw from all your courses this term.</p>
+          <p>I look forward to hearing from you and hope you have a successful experience!</p>
+        </div>
+      </section><!-- End of this section -->
+
+
+      <section class="report">
+        <button class="wk1r"></button>
+        <p><b>Report:</b> <a
+            href="https://byui.az1.qualtrics.com/jfe/form/SV_8oF267U5kSJoLY2?WeekNo=1&amp;CMG=1&amp;CourseCode=WDD%20231">Report
+            your week 1 outreach</a> by midnight on <time class="date6"></time></p>
+      </section><!-- End of this section -->
+
+    </details><!-- end week 1 -->
+
+
+    <!-- ************************ Week Two ***************************** -->
+    <details id="week02start">
+      <summary>Week 2 <time class="date8a"></time></summary>
+
+      <section class="teams">
+        <button class="wk2a"></button>
+        <p>On <time class="date8b"></time> post this announcement to Teams</p>
+        <div>
+          <p><b>SUBJECT:</b> Week 2: Looking forward to this module.</p>
+          <p>This week will be fast and furious as you learn to build you own JSON data file and then import it using
+            fetch. It's a powerful skill to have on your resume. You should have some fun when you learn to animate your
+            small screen navigation using CSS Grid and transitions. It's pretty cool. 🥰 If you have any questions,
+            please post them in the appropriate weekly discussion channel of MS Teams.</p>
+        </div>
+      </section> <!-- End of this section -->
+
+
+
+      <section class="canvas">
+        <button class="wk2b"></button>
+        <p><b>Group of One Problem</b> On <time class="date8b"></time> go to Canvas and review the People >
+          WDD231Groups and identify all students in a group of one. Return to Canvas and using the Inbox > Compose a New
+          Message send a message to this list of single group students.</p>
+        <div>
+          <p><b>SUBJECT:</b> Selecting a new group</p>
+          <p>You appear to be the only student who signed up for your group time. 🤪 To complete the group activities
+            each week, you must join another group. Please go back to Canvas and add yourself to a different group, and
+            then go to Teams and introduce yourself to your new group. You must attend a group meeting this week, so do
+            this today if possible.<br>
+            Bro/Sister Smith</p>
+        </div>
+      </section> <!-- End of this section -->
+
+
+
+      <section class="canvas">
+        <button class="wk2c"></button>
+        <p><b>No Group Problem</b> On <time class="date8b"></time> open the "People" tab on the left side. Choose the "WDD231Teams" Tab. From the three dots, select "Message all unasigned Students" and send a personalized version of the following message.</p>
+        <div>
+          <p><b>SUBJECT:</b> Selecting a group</p>
+          <p>One of your first assignments for last week was to pick a group in Canvas and then sign up for the same group in MS Teams. I see that you have not yet signed up for a Canvas group.🥲 Please try to complete this assignment by the end of the day.<br>
+            Bro/Sister Smith</p>
+        </div>
+      </section> <!-- End of this section -->
+
+
+      <section class="canvas">
+        <button class="wk2d"></button>
+        <p><b>Late Work: </b>On <time class="date9a"></time> select the W01 Assignment: Course Home Page in the
+          Canvas gradebook and message students who have not submitted the assignment. Send a personalized version of
+          the following email.</p>
+        <div>
+          <p><b>SUBJECT:</b> Missing the Week 1 Course Home Page Development</p>
+          <p>I noticed you have not turned in the first assignment. Because the course is only seven weeks long, to
+            succeed, it will be vital for you to be engaged in this course every week. Is there something that might be
+            keeping you from engaging in this class? Please email me so we can work together to help you have a
+            successful term.😊</p>
+          <p>If you do not intend to participate in this course this term, I recommend that you drop the course before
+            the drop deadline on XXXXXXXXX. Depending on your situation, you may be able to receive a prorated tuition
+            refund. If you choose to drop the class after the drop deadline, you will receive a "W" grade on your
+            transcript for this course</p>
+          <p>Were you able to work through all the Learning Activities for last week?</p>
+          <p>I look forward to hearing from you and hope you have a successful experience!<br>
+            Bro/Sister Smith</p>
+        </div>
+      </section> <!-- End of this section -->
+
+      <section class="report">
+        <button class="wk2r"></button>
+        <p><b>Report:</b> <a
+            href="https://byui.az1.qualtrics.com/jfe/form/SV_8oF267U5kSJoLY2?WeekNo=2&CMG=1&CourseCode=WDD%20231">Report
+            your week 2 outreach</a> by midnight on <time class="date13"></time></p>
+      </section><!-- End of this section -->
+
+    </details><!-- end of week 2 -->
+
+    <!-- ************************ Week Three ***************************** -->
+    <details id="week03start">
+      <summary>Week 3 <time class="date15a"></time></summary>
+
+      <section class="teams">
+        <button class="wk3a"></button>
+        <p>On <time class="date15b"></time> post this announcement to Teams</p>
+        <div>
+          <p><b>SUBJECT:</b> Week 3: Playing with the Big Boys Now</p>
+          <p>This week you get to interact with a professional level weather API and report dynamic data on your very
+            own website. Another really great skill for your portfolio toolbox. If you have any questions, please post
+            them in the appropriate weekly discussion channel of MS Teams.</p>
+        </div>
+      </section> <!-- End of this section -->
+
+      <section class="canvas">
+        <button class="wk3b"></button>
+        <p><b>Late Work:</b>On select the <b>W02 Assignment: Chamber Directory Page</b> in the gradebook and
+          message students who have <b>not submitted</b> the assignment. Send a personalized version of the following
+          email.</p>
+        <div>
+          <p><b>SUBJECT:</b> Missing your W02 Assignment: Chamber Directory Page</p>
+          <p>I noticed that you have not yet submitted last week's Chamber Directory Page. Remember that it's not too
+            late! Your assignment will be graded without a late penalty so please get it in as soon as you can.<br>
+            Do you ever find yourself without power or internet access when trying to work on this class?<br>
+            Bro/Sister Smith</p>
+        </div>
+      </section> <!-- End of this section -->
+
+      <section class="canvas">
+        <button class="wk3c"></button>
+        <p><b>Group Check:</b> On go back into Canvas > People > WDD231Groups tab and note the students who are
+          still not signed up for a group. Then look at the grades tab and see which ones have participated and which
+          have not.<br>Send one of the following messages to each student using the envelope as shown below (green
+          arrow). This typically takes me an hour or so to complete but is very beneficial for group work.</p>
+        <div>
+          <p><b>SUBJECT:</b> Submitting assignments but no group yet</p>
+          <p>I see you have been submitting assignments for class but you have not joined a Canvas group yet. <br>
+            Did you join a Teams group but forget to also join the same group in Canvas?<br>
+            Did you forget to sign up for a group for this class?<br> Is there something I can help with?</p>
+
+          <p><b>SUBJECT:</b> Not signed up for a group in WDD231.</p>
+          <p>I see that you have not submitted any assignments for WDD231 class and you have not joined a group yet. Are
+            you going to continue with this class or are you planning to drop?</p>
+        </div>
+        <img src="images/canvas-student.webp">
+      </section> <!-- End of this section -->
+
+      <section class="task">
+        <button class="wk3d"></button>
+        <p>On <time class="date17a"></time> Open module 2 and find the "W02 Ponder: 60-second Status Update".
+          Download the student submissions.</p>
+        <div>
+          <ol>
+            <li>Click the quiz in the module.</li>
+            <li>Select "Survey Statistics" in the top right corner.</li>
+            <li>Click the "Student Analysis" button to generate a report.</li>
+            <li>A .csv file should be downloaded to your computer.</li>
+          </ol>
+          <p>See if there are any trends in the submissions that need to be looked at.</p>
+        </div>
+      </section> <!-- End of this section -->
+
+      <section class="canvas">
+        <button class="wk3e"></button>
+        <p><b>Positive Outreach </b>On <time class="date18b"></time> identify students who scored more than
+          24/30 on <b>W02 Assignment: Chamber Directory Page</b> and send them a message congratulating them on their
+          work.</p>
+        <div>
+          <p><b>SUBJECT:</b> Congratulations on your directory page</p>
+          <p>I see that you have done well on the Directory Page from last week.<br>
+            Have you had opportunities to help out members of your team? 😁<br>
+            Bro/Sister Smith</p>
+        </div>
+      </section> <!-- End of this section -->
+
+      <section class="canvas">
+        <button class="wk3f"></button>
+        <p>On <time class="date19b"></time> send a message to ALL students</p>
+        <div>
+          <p><b>SUBJECT:</b> Group Functionality</p>
+          <p>Is your group functioning? If you need to change groups, please let me know.<br>
+            Bro/Sister Smith</p>
+        </div>
+      </section> <!-- End of this section -->
+
+      <section class="report">
+        <button class="wk3r"></button>
+        <p><b>Report:</b> <a
+            href="https://byui.az1.qualtrics.com/jfe/form/SV_8oF267U5kSJoLY2?WeekNo=3&CMG=1&CourseCode=WDD%20231">Report
+            your week 3 outreach</a> by midnight on <time class="date20"></time></p>
+      </section><!-- End of this section -->
+
+    </details><!-- end of week 3 -->
+
+
+
+    <!-- ************************ Week Four ***************************** -->
+    <details id="week04start">
+      <summary>Week 4 <time class="date22a"></time></summary>
+
+      <section class="teams">
+        <button class="wk4a"></button>
+        <p>On <time class="date22b"></time> post this announcement to Teams</p>
+        <div>
+          <p><b>SUBJECT:</b> Week 4: More tools for your toolbox</p>
+          <p>This week you get to implement and design an HTML5 popup modal. We will also take it to the next level with
+            dymanivally creating these modals using JavaScript. Before you go, we also have an enhancment to building a
+            form (you learned this in WDD131). We are going to grab data from a URL string and display it onto a web
+            page. 😊 If you have any questions, please post them in the appropriate weekly discussion channel of MS
+            Teams.</p>
+        </div>
+      </section> <!-- End of this section -->
+
+      <section class="canvas">
+        <button class="wk4b"></button>
+        <p><b>Late Work: </b>On <time class="date22b"></time> select the <b>W03 Assignment: Chamber Home
+            Page</b>> in the gradebook and message students who have <b>not submitted</b> the assignment. Send a
+          personalized version of the following email.</p>
+        <div>
+          <p><b>SUBJECT:</b> Missing your Chamber Home Page</p>
+          <p>I noticed that you have not yet submitted last week's home page assignment. Please don't give up because
+            you can still turn it in. There is no late penalty.<br>
+            Has your team been able to assist you with this week's assignment?<br>
+            Bro/Sister Smith</p>
+        </div>
+      </section> <!-- End of this section -->
+
+      <section class="canvas">
+        <button class="wk4c"></button>
+        <p><b>Positive Outreach:</b>On <time class="date25a"></time> identify students who scored more than
+          16/20 on <b>W03 Assignment: Chamber Home Page</b> and send them a message congratulating them on their work.
+        </p>
+        <div>
+          <p><b>SUBJECT:</b> Congratulations on your Chamber home page</p>
+          <p>I see that you have done well on the Chamber home Page assignment from last week.<br>
+            What features do you think should be added to this week's assignment to make it better for future
+            students?<br>
+            Bro/Sister Smith</p>
+        </div>
+      </section> <!-- End of this section -->
+
+      <section class="report">
+        <button class="wk4r"></button>
+        <p><b>Report:</b> <a
+            href="https://byui.az1.qualtrics.com/jfe/form/SV_8oF267U5kSJoLY2?WeekNo=4&CMG=1&CourseCode=WDD%20231">Report
+            your week 4 outreach</a> by midnight on <time class="date27"></time></p>
+      </section><!-- End of this section -->
+
+    </details><!-- end of week 4 -->
+
+    <!-- ************************ Week FIVE ***************************** -->
+    <details id="week05start">
+      <summary>Week 5 <time class="date29a"></time></summary>
+
+      <section class="teams">
+        <button class="wk5a"></button>
+        <p>On <time class="date29b"></time> post this announcement to Teams</p>
+        <div>
+          <p><b>SUBJECT:</b> Week 5: Finishing up the Chamber Page</p>
+          <p>We're getting close to the end so hang on and keep taking your vitiman pills. This week you get to build a
+            new page for your chamber web site that allows people to discover your home town. So be proud of your town
+            and show us some cool things about where you live. If you have any questions, please post them in the
+            appropriate weekly discussion channel of MS Teams. If you have any questions, please post them in the
+            appropriate weekly discussion channel of MS Teams.</p>
+        </div>
+      </section> <!-- End of this section -->
+
+      <section class="canvas">
+        <button class="wk5b"></button>
+        <p><b>Late Work: </b>On <time class="date29c"></time> select the <b>W04 Assignment: Chamber Join
+            Page</b> in the gradebook and message students who have <b>not submitted</b> the assignment. Send a
+          personalized version of the following email.</p>
+        <div>
+          <p><b>SUBJECT:</b> Missing the join page from last week</p>
+          <p>I noticed that you have not yet submitted last week's web form assignment on your GitHub home page. As you
+            know, you can still turn it in but we are getting close to the end of the semester.<br>
+            There are several videos in this class, do you ever turn on the captions [CC] while you watch?<br>
+            Bro/Sister Smith</p>
+        </div>
+      </section> <!-- End of this section -->
+
+      <section class="canvas">
+        <button class="wk5c"></button>
+        <p><b>Positive Outreach:</b> On <time class="date32a"></time> identify students who scored more than
+          25/30 on <b>W04 Assignment: Chamber Join Page</b> and send them a message congratulating them on their work.
+        </p>
+        <div>
+          <p><b>SUBJECT:</b> Congratulations on completing the join form on your Chamber site.</p>
+          <p>I see that you have successfully completed the Join Page for the Chamber of Commerce assignment from last
+            week.<br>
+            Was your team able to meet this week?<br>
+            Bro/Sister Smith</p>
+        </div>
+      </section> <!-- End of this section -->
+
+      <section class="report">
+        <button class="wk5r"></button>
+        <p><b>Report:</b> <a
+            href="https://pdx1.qualtrics.com/login/authenticator/sso/v1/redirect?state=_0db319197f5b01c093c6529ac4785fb7">Report
+            your week 5 outreach</a> by midnight on <time class="date34"></time></p>
+      </section><!-- End of this section -->
+
+    </details><!-- end of week 5 -->
+
+    <!-- ************************ Week SIX ***************************** -->
+    <details id="week06start">
+      <summary>Week 6 <time class="date36a"></time></summary>
+
+      <section class="teams">
+        <button class="wk6a"></button>
+        <p>On <time class="date36b"></time> post this announcement to Teams</p>
+        <div>
+          <p><b>SUBJECT:</b> Week 6: The beginning of the end of this class.</p>
+          <p>The final assessment for this class is a multiple-page website, and the best part is that you get to choose
+            the topic.<br>
+            Last week, you picked the topic and submitted a project site plan as a single web page.<br>
+            This week, you are creating that site! As Elder Uchtdorf shared, <b>"The desire to create is one of the
+              deepest yearnings of the human soul"</b> <br>
+            This website will show everything you have learned in this and previous classes for this certificate.<br>
+            As you may have noticed, there is no teamwork allowed for this project, you on your own.😇<br>
+            You will create a new repository inside your WDD231 account and host all the files there.<br>
+            My friends, working with you during this class has been a great experience; I wish you the best as you
+            create something extraordinary.</p>
+        </div>
+      </section> <!-- End of this section -->
+
+      <section class="canvas">
+        <button class="wk6b"></button>
+        <p><b>Late Work:</b> On select the <b>W05 Assignment: Chamber Discover Page</b> in the gradebook and
+          message students who have <b>not submitted</b> the assignment. Send a personalized version of the following
+          email.
+        </p>
+        <div>
+          <p><b>SUBJECT:</b> Missing last weeks discover page</p>
+          <p>I noticed that you have not yet submitted last week's discover page on your Chamber Site. As you know, you
+            can still turn it in without late penalties.<br>
+            Was your team able to meet this week?<br>
+            Bro/Sister Smith</p>
+        </div>
+      </section> <!-- End of this section -->
+
+      <section class="canvas">
+        <button class="wk6c"></button>
+        <p><b>Positive Outreach</b> On <time class="date39a"></time> identify students who scored more than
+          25/30 on <b>W05 Assignment: Chamber Discover Page</b> and send them a message congratulating them on their
+          work.</p>
+        <div>
+          <p><b>SUBJECT:</b> Congratulations on doing well on the Chamber Discover page.</p>
+          <p>I see that you did a great job on your chamber discover assignment from last week.<br>
+            How has this course helped you become a better web developer?<br>
+            Bro/Sister Smith</p>
+        </div>
+      </section> <!-- End of this section -->
+
+      <section class="report">
+        <button class="wk6r"></button>
+        <p><b>Report:</b> <a
+            href="https://byui.az1.qualtrics.com/jfe/form/SV_8oF267U5kSJoLY2?WeekNo=6&CMG=1&CourseCode=WDD%20231">Report
+            your week 6 outreach</a> by midnight on <time class="date41"></time></p>
+      </section><!-- End of this section -->
+
+    </details><!-- end of week 6 -->
+
+
+    <!-- ************************ Week SEVEN ***************************** -->
+    <details id="week07start">
+      <summary>Week 7 <time class="date43a"></time></summary>
+
+      <section class="teams">
+        <button class="wk7a"></button>
+        <p>On <time class="date43b"></time> post this announcement to Teams</p>
+        <div>
+          <p><b>SUBJECT:</b> Final Exam</p>
+          <p>This week is the big exam. Your project is also due by <time class="date45b"></time></p>
+        </div>
+      </section> <!-- End of this section -->
+
+      <section class="canvas">
+        <button class="wk7b"></button>
+        <p>On send the following message to ALL students in the course. Use the Canvas InBox > Compose a New Message >
+          to all in this class.</p>
+        <div>
+          <img src="images/msgAllStudents.webp">
+          <p><b>SUBJECT:</b> Class ends very soon</p>
+          <p>Even though this awesome WDD231 block class will close on <time class="date48"></time> at midnight. You
+            must have ALL your assignments submitted by <time class="date46"></time> so the graders have time to grade
+            before grades are due to the home office. <br>The most important submission is your finished Individual
+            Website Project. If you have late submissions from units 5 and 6, make sure to resubmit those before class
+            ends as well. Remember you have three opportunities for a regrade.<br>
+            Have you taken the opportunity to pray for the Holy Ghost to help you with any part of your assignment this
+            week?<br>
+            Bro/SisterSmith</p>
+        </div>
+      </section> <!-- End of this section -->
+
+      <section class="canvas">
+        <button class="wk7c"></button>
+        <p><b>Positive Outreach:</b> On <time class="date45a"></time> identify students who scored more than 0.5 on the
+          <b>W07 End-of-Course Evaluation</b> and send them a message thanking them for their feedback.</p>
+        <div>
+          <p><b>SUBJECT:</b> Providing Feedback</p>
+          <p>Thanks for taking the time to complete the end-of-course evaluation. We are constantly looking for ways to
+            improve the course and your feedback is important.</p>
+        </div>
+      </section> <!-- End of this section -->
+
+      <section class="report">
+        <button class="wk7r"></button>
+        <p><b>Report:</b> <a
+            href="https://byui.az1.qualtrics.com/jfe/form/SV_8oF267U5kSJoLY2?WeekNo=7&CMG=1&CourseCode=WDD%20231">Report
+            your week 7 outreach</a> by midnight on <time class="date48a"></time></p>
+      </section><!-- End of this section -->
+
+
+
+
+    </details><!-- end of week 7 -->
+
+
+
+
+
+
+  </main>
+
+  <footer>
+    <p>This outreach pages uses localStorage to help you keep track of the tasks you have completed. If you change computers or browsers, the tracking will not follow you.</p>
+    <p>Paul Cheney &bull; WDD231 Frontend Development I &bull; BYU Pathway Worldwide</p>
+  </footer>
+
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
