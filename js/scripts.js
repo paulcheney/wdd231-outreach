@@ -1,6 +1,6 @@
 //Set the date below to the first Monday of the Pathway term
 const termStart = new Date('1/6/2025').getTime();
-const termNumber = '2024_1'
+const termNumber = '2025_1'
 const monthList = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const dayList = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
 
