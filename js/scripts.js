@@ -18,7 +18,8 @@ listOfDeadlines.forEach(deadLine => {
     //console.log(daysAfterStart)
 
     //add the number appended to the class name to the term start date
-    let dateToInsert = new Date(termStart + (daysAfterStart * 86400000)-1)
+    let dateToInsert = new Date(termStart + (daysAfterStart * 86400000))
+    //console.log(dateToInsert)
 
     //Grab just the Week Day Name
     let day = dayList[dateToInsert.getDay()]
