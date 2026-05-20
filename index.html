@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="styles/styles.min.css">
 
   <title>WDD231 Student Outreach</title>
 
@@ -771,14 +771,14 @@
       </section>
 
       <!--03 Missing Assignment-->
-      <section class="canvas">
+      <section class="canvas ims">
         <button class="wk3d"></button>
         <p>On <time class="date15b"></time> select the " W02 Assignment: Chamber Directory Page" in the gradebook and
           message students who have <b>not submitted</b> the assignment. Send a personalized version of the following
           email.</p>
         <div>
           <p><b>SUBJECT:</b> Missing the "W02 Assignment: Chamber Directory Page"</p>
-          <p>I noticed you have not submitted last week's assignment yet.😪 You can still turn it in up to 7 days after
+          <p>{{firstname}}, I noticed you have not submitted last week's assignment yet.😪 You can still turn it in up to 7 days after
             it is due. Please try to turn it in soon. 😁<br>
             Bro/Sister Smith</p>
         </div>
@@ -822,23 +822,23 @@
 
 
       <!--03 High Performance-->
-      <section class="canvas">
+      <section class="canvas  ims">
         <button class="wk3g"></button>
         <p>On <time class="date18a"></time> find the "W02 Assignment: Chamber Directory Page" assignment in the gradebook and "Message Students Who" Scored more than 24/30 and send them a personalized version of the following message.</p>
         <div>
           <p><b>SUBJECT:</b> Congratulations on your "W02 Assignment: Chamber Directory Page"</p>
-          <p><b>MESSAGE:</b> I see that you have done well on the "W02 Assignment: Chamber Directory Page" assignment from last week.<br>Did you learn anything this week that you see as useful in your future career? 😁. <br>
+          <p><b>MESSAGE:</b> {{firstname}}, I see that you have done well on the "W02 Assignment: Chamber Directory Page" assignment from last week.<br>Did you learn anything this week that you see as useful in your future career? 😁. <br>
             Bro/Sister Smith</p>
         </div>
       </section>
 
       <!--03 Low Performance-->
-      <section class="canvas">
+      <section class="canvas  ims">
         <button class="wk3h"></button>
         <p>On <time class="date18b"></time> find the "W02 Assignment: Chamber Directory Page" assignment in the gradebook and "Message Students Who" Scored less than 15/30 and send them a personalized message of concern.</p>
         <div>
           <p><b>SUBJECT:</b> Struggling with the "W02 Assignment: Chamber Directory Page"</p>
-          <p><b>MESSAGE:</b> I see that you earned a low score on the "W02 Assignment: Chamber Directory Page" from last week. <br> If it was because you submitted it late and the grading team is behind then you can ignore this message.🤨<br>Are you able to spend 15 hours each week on this class? 🥲<br>
+          <p><b>MESSAGE:</b> {{firstname}}, I see that you earned a low score on the "W02 Assignment: Chamber Directory Page" from last week. <br> If it was because you submitted it late and the grading team is behind then you can ignore this message.🤨<br>Are you able to spend 15 hours each week on this class? 🥲<br>
             Bro/Sister Smith</p>
         </div>
       </section>

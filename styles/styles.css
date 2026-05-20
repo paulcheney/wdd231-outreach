@@ -73,8 +73,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -175,8 +174,7 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
-  -moz-appearance: button;
-       appearance: button;
+  appearance: button;
 }
 
 /**
@@ -260,8 +258,7 @@ textarea {
  */
 [type=search] {
   -webkit-appearance: textfield; /* 1 */
-  -moz-appearance: textfield;
-       appearance: textfield;
+  appearance: textfield;
   outline-offset: -2px; /* 2 */
 }
 
@@ -323,6 +320,8 @@ html {
 
 /*---- apply a natural box layout model to all elements -------*/
 * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -338,8 +337,7 @@ a {
 header {
   display: grid;
   grid-template-columns: 32px auto;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
   margin: 1rem 16px;
 }
 header img {
@@ -354,8 +352,7 @@ nav {
   margin: 1rem 16px;
   display: flex;
   justify-content: center;
-  -moz-column-gap: 8px;
-       column-gap: 8px;
+  column-gap: 8px;
 }
 nav a {
   display: block;
@@ -442,7 +439,6 @@ summary time {
   margin: 1rem 0.5rem;
   border-radius: 8px;
   border-top: 6px solid rgba(0, 0, 0, 0.2);
-  background-color: #ddf;
 }
 .teams > p {
   grid-area: title;
@@ -474,6 +470,9 @@ summary time {
   font-style: italic;
   color: #333;
 }
+.teams {
+  background-color: #ddf;
+}
 
 .canvas {
   display: grid;
@@ -483,7 +482,6 @@ summary time {
   margin: 1rem 0.5rem;
   border-radius: 8px;
   border-top: 6px solid rgba(0, 0, 0, 0.2);
-  background-color: #dfd;
 }
 .canvas > p {
   grid-area: title;
@@ -515,6 +513,13 @@ summary time {
   font-style: italic;
   color: #333;
 }
+.canvas {
+  background-color: #dfd;
+}
+
+.ims {
+  border-left: 6px solid red;
+}
 
 .task {
   display: grid;
@@ -524,7 +529,6 @@ summary time {
   margin: 1rem 0.5rem;
   border-radius: 8px;
   border-top: 6px solid rgba(0, 0, 0, 0.2);
-  background-color: #ffd;
 }
 .task > p {
   grid-area: title;
@@ -556,6 +560,9 @@ summary time {
   font-style: italic;
   color: #333;
 }
+.task {
+  background-color: #ffd;
+}
 
 .report {
   display: grid;
@@ -565,7 +572,6 @@ summary time {
   margin: 1rem 0.5rem;
   border-radius: 8px;
   border-top: 6px solid rgba(0, 0, 0, 0.2);
-  background-color: #fdd;
 }
 .report > p {
   grid-area: title;
@@ -597,6 +603,9 @@ summary time {
   font-style: italic;
   color: #333;
 }
+.report {
+  background-color: #fdd;
+}
 .report a {
   color: #9f0909;
 }
@@ -611,10 +620,12 @@ button:hover {
 
 button.checked {
   background-color: #0d0;
-  color: white;
 }
 button.checked:before {
   content: "✔";
+}
+button.checked {
+  color: white;
 }
 
 footer {
